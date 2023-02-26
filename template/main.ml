@@ -424,7 +424,7 @@ let rec affiche_ecran_titre () =
         begin_drawing();
         clear_background Color.black;
         draw_rectangle 0 0 largeur_ecran hauteur_ecran Color.black;
-        draw_text "BOMBMANSCII" 100 50 75 Color.white;
+        draw_text "BOMBERMANSCII" 100 50 75 Color.white;
         draw_text "Please PRESS ENTER to " 50 200 50 Color.white;
         draw_text "Start the GAME! " 50 275 50 Color.white;
         end_drawing();
