@@ -1,6 +1,0 @@
-(executable
-   (name main)
-   (libraries graphics raylib))
-(env
-  (dev
-    (flags (:standard -w -27 -w -26))))
