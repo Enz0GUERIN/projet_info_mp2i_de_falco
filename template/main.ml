@@ -218,9 +218,9 @@ let compteur_decr (bomb : bomb) (p1 : player) (p2 : player) =
     match t with
     | 0 -> if bomb.duree_explosion = 0 then bomb.position <- (1500, 2000);
         explosion_globale bomb p1 p2
-    | 1 -> p1.nombre_bombe <- p1.nombre_bombe + 1;
-        bomb.duree_explosion <- 1;
+    | 1 -> bomb.duree_explosion <- 1;
         bomb.compteur <- 0;
+	if p1.nombre_bombe < nb_max_bombe then p1.nombre_bombe <- p1.nombre_bombe + 1;
         explosion_globale bomb p1 p2
     | _ -> bomb.compteur <- t - 1;
         flagb := true;
